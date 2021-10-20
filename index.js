@@ -41,6 +41,17 @@ Handlebars.registerHelper("formatDate", function(datetime) {
   }
 });
 
+
+Handlebars.registerHelper("formatDateYear", function(datetime) {
+	if (moment) {
+	  format = "YYYY";
+	  return moment(datetime).format(format);
+	}
+	else {
+	  return datetime;
+	}
+  });
+
 Handlebars.registerHelper("httpReplacer", function(url) {
   return url.replace(/(^\w+:|^)\/\//, '');
 });

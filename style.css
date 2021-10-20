@@ -100,7 +100,7 @@ a {
   visibility: hidden;
 }
 .summary {
-  margin: 10px 0 50px;
+  margin: 10px 0 10px;
   font-style: italic;
 }
 #skills .keywords,
@@ -145,6 +145,9 @@ a {
 #education .education-sub-info span:not(:last-child):after {
   margin: 0 5px;
   content: "/";
+}
+#edu {
+  margin-bottom: 100px !important;
 }
 #work .url,
 #work .position,
@@ -237,7 +240,9 @@ a {
   overflow: hidden;
 }
 #contacts {
-  margin-left: 25%;
+  margin-bottom: 0 !important;
+}
+#contactsContent {
   font-size: 0.8em;
 }
 #contacts .site {
@@ -331,9 +336,6 @@ a {
   .summary {
     margin: 0.2cm 0 0.9cm 0;
   }
-  #profiles {
-    display: none;
-  }
   #resume > section {
     margin: 0;
   }
@@ -354,12 +356,11 @@ a {
     margin-top: 1cm;
     margin-bottom: 1.2cm;
   }
-  #contacts {
-    width: 75%;
-    float: right;
-  }
   p {
     opacity: 1;
+  }
+  #awards {
+    display: none;
   }
 }
 

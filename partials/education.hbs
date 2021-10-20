@@ -1,6 +1,6 @@
 {{#if resume.education.length}}
 <section id="education">
-	<h3>Education</h3>
+	<h3 id="edu">Education</h3>
 	{{#each resume.education}}
 	<section class="item">
     <div class="row">
@@ -12,12 +12,12 @@
       <div class="date">
         {{#if startDate}}
         <span class="startDate">
-          {{formatDate startDate}}
+          {{formatDateYear startDate}}
         </span>
         {{/if}}
         {{#if endDate}}
         <span class="endDate">
-          - {{formatDate endDate}}
+          - {{formatDateYear endDate}}
         </span>
         {{else}}
         <span class="endDate">
@@ -37,9 +37,9 @@
         {{studyType}}
       </span>
       {{/if}}
-      {{#if gpa}}
-      <span class="gpa">
-        GPA: {{gpa}}
+      {{#if score}}
+      <span class="studyType">
+        GPA: {{score}}
       </span>
       {{/if}}
     </div>

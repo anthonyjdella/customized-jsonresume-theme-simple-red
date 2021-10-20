@@ -13,7 +13,7 @@
         <div class="date">
           {{#if date}}
           <span>
-            {{formatDate date}}
+            {{formatDateYear date}}
           </span>
           {{/if}}
         </div>
@@ -21,11 +21,6 @@
       {{#if awarder}}
       <div class="awarder">
         {{awarder}}
-      </div>
-      {{/if}}
-      {{#if summary}}
-      <div class="summary">
-        <p>{{summary}}</p>
       </div>
       {{/if}}
     </div>

@@ -1,6 +1,6 @@
 {{#if resume.work.length}}
 <section id="work">
-	<h3>Work</h3>
+	<h3>Experience</h3>
   <section>
     {{#each resume.work}}
     <div class="item">
@@ -16,7 +16,7 @@
             {{formatDate startDate}}
           </span>
           {{/if}}
-          {{#if endDate}}
+          {{#ifCond endDate '!=' 'present'}}
           <span class="endDate">
             - {{formatDate endDate}}
           </span>
@@ -24,14 +24,9 @@
           <span class="endDate">
             - Present
           </span>
-          {{/if}}
+          {{/ifCond}}
         </div>
       </div>
-      {{#if url}}
-      <div class="url">
-        <a href="{{url}}">{{url}}</a>
-      </div>
-      {{/if}}
       {{#if position}}
       <div class="position">
         {{position}}
@@ -46,7 +41,6 @@
       </div>
       {{/ifCond}}
       {{#if highlights.length}}
-      <h5>Responsibilities:</h5>
       <ul class="highlights">
         {{#each highlights}}
         <li>{{.}}</li>

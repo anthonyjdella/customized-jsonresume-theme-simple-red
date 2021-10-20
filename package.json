@@ -1,16 +1,20 @@
 {
-  "name": "jsonresume-theme-simple-red",
-  "version": "1.0.4",
+  "name": "@anthonyjdella/jsonresume-theme-anthonyjdella-simple-red",
+  "version": "1.0.0",
   "description": "Simple red theme for JSON Resume",
-  "author": "Andrew Avdeev <andrewww.avdeev@gmail.com> (https://github.com/aandrewww)",
+  "author": "Anthony Dellavecchia <leeznon@gmail.com>)",
   "license": "MIT",
-  "homepage": "https://github.com/aandrewww/jsonresume-theme-simple-red",
+  "homepage": "https://github.com/anthonyjdella/customized-jsonresume-theme-simple-red",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aandrewww/jsonresume-theme-simple-red.git"
+    "url": "https://github.com/anthonyjdella/customized-jsonresume-theme-simple-red.git"
+  },
+  "scripts": {
+    "start": "resume serve --port ${PORT:-4000} --theme simple-red",
+    "build": "mkdir -p public && resume export public/index.html --theme \"$(pwd)\""
   },
   "bugs": {
-    "url": "https://github.com/aandrewww/jsonresume-theme-simple-red/issues"
+    "url": "https://github.com/anthonyjdella/customized-jsonresume-theme-simple-red/issues"
   },
   "keywords": [
     "jsonresume",
@@ -29,6 +33,7 @@
   ],
   "dependencies": {
     "handlebars": "^4.0.14",
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "resume-cli": "^3.0.5"
   }
 }

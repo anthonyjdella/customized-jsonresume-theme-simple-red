@@ -1,3 +1,10 @@
+# Customized JSON Resume Theme: Simple Red
+
+🖼️ This is a slightly tweaked version of the [Simple Red theme](https://github.com/aandrewww/jsonresume-theme-simple-red). Tweaked to fit my design preferences. Published on NPM and GitHub Registry.
+
+<details>
+  <summary>Click to expand README.md of the source repository!</summary>
+
 # jsonresume-theme-simple-red
 Simple red theme for JSONResume. [See it live.](https://andrewavdeev.com/resume.html)
 
